@@ -10,10 +10,25 @@
 
 ```
 
-* To run Server: use terminal and type:
+* 1. Run Server: use terminal and type:
 
 ```
 #!Plain Text
 python Server.py
 
 ```
+ * 2. Run Client: use other terminal and type:
+
+```
+#!Plain Text
+python Client.py
+
+```
+ * 3. Access web: using browser
+```
+#!Plain Text
+http://localhost:6080/
+
+```
+ * 4. Test app
+In terminal that run Client.py, tap card to NFC Reder, Card ID will be shown on website.
