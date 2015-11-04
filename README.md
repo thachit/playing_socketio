@@ -1,6 +1,6 @@
 # README #
 
-* Dependencies: all python libraries are placed in file *requirement.txt*. And below is steps to install dependency.
+* Install Dependencies: all python libraries are placed in file *requirement.txt*. And below is steps to install dependency.
 
 ```
 #!Plain Text
@@ -9,36 +9,11 @@
    3.  Copy file libs/websockets.py to folder /usr/local/lib/python2.7/dist-packages/twisted/web
 
 ```
-* Database configuration
-* To run NFC Server: use terminal and type:
+
+* To run Server: use terminal and type:
 
 ```
 #!Plain Text
 python Server.py
 
 ```
-
-* Deployment instructions: NFC server use [Upstart](https://www.digitalocean.com/community/tutorials/the-upstart-event-system-what-it-is-and-how-to-use-it) to start as a service. To config upstart to run NFC server:
-
-```
-#!Plain Text
-
-1. Create a folder name nfc-server in /opt. Then cd to that folder.
-2. Clone source code from bitbucket (using https or ssh protocol), then cd to folder touchterminal-server.
-2. Copy file scripts/nfc-server.conf to folder /etc/init, then type command: sudo chmod 775 /etc/nfc-server.conf
-3. To start NFC service: sudo service nfc-server start
-4. To stop NFC service: sudo service nfc-server stop
-5. To restart NFC service: sudo service nfc-server restart
-```
-
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
