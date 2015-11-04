@@ -1,34 +1,5 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration: create a file named: config.cfg in same folder with file Server.py. And then add configurations to this file
-
-```
-#!Plain Text
-
-[DEFAULT]
-tcp_port = [TCP Port]
-web_port = [Web Port]
-websocket_port = [Web Socket Port]
-db_host = [Database host]
-db_port = [Database port]
-db_name = [Database name]
-#  Uncomment to use authentication of database.
-; db_user = [User to connect db]
-; db_password = [Password of user connect db]
-; db_authentication_source = [Authentication source]
-```
-
 * Dependencies: all python libraries are placed in file *requirement.txt*. And below is steps to install dependency.
 
 ```
