@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Web Socket lib -->
+    <script type="text/javascript" src="/static/libs/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+    <script src="/static/libs/jquery.gracefulWebSocket.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            window.chat = {};
+            chat.ws = $.gracefulWebSocket("ws://localhost:6060");
+            if(chat.ws.OPEN == 1)
+            {
+                $('#status').text('connected');
+            }
+            else {
+                $('#status').text('Not connect');
+            }
+            chat.ws.onmessage = function (event) {
+                console.log(event.data);
+                $('#card-id').text('');
+                $('#card-id').text(event.data);
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <h2>Status: <span id="status"></span></h2>
+
+    CardID: <span id="card-id"></span>
+</body>
+
+</html>
