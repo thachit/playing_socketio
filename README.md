@@ -1,8 +1,13 @@
 # README #
 * Requirement:
+
+```
+#!Plain Text
 1. Ubuntu 14.04 or higher
 2. python 2.7
 3. Source control Git: (sudo apt-get install git)
+
+```
 * Install Dependencies: all python libraries are placed in file *requirement.txt*. And below is steps to install dependency.
 
 ```
